@@ -123,45 +123,61 @@
         </div>
 
     </section>
-    <section class="w-full h-350 md:h-250 relative px-4 md:px-10 py-16 md:py-30" id="our-shelf">
+    <section class="w-full md:h-250 relative px-4 md:px-10 py-16 md:py-30" id="our-shelf">
         <div class="flex flex-col items-center text-center gap-4">
             <h2 class="text-3xl md:text-4xl font-bold text-amber-950">Our Shelf This Month</h2>
             <p class="text-lg md:text-xl text-amber-800 max-w-2xl">Staff favourites and bestsellers, picked by people who read them.</p>
             <div class="w-30 h-1 bg-amber-950 rounded-full"></div>
         </div>
-        <div class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-5 md:px-10 lg:gap-10 lg:px-20">
-            <div class="bg-white  h-130 border-orange-100 text-amber-950 rounded-xl border-2 p-6 space-y-3 hover:border-amber-900 hover:shadow-2xl hover:shadow-amber-950/80 hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center  lg:h-150">
-                <img src="images/الجزار.jpg" alt="book image" class="w-full max-w-60 aspect-[2/3] object-cover rounded-lg shadow-lg shadow-amber-950 mt-1">
-                        <h3 lang="ar" class="text-2xl font-bold">الجزار</h3>
-                        <p class="stars text-yellow-400" aria-label="Rated 5 out of 5"><i class="fa-solid fa-star "></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <p class="sec2price font-serif">150 EGP <del>200 EGP</del></p>
-                        <button class="bg-amber-950 text-white py-2 px-4 rounded-lg hover:bg-amber-900 transition-colors duration-300">Add to cart <i class="fa-solid fa-cart-shopping"></i></button>        
-            </div>
-            <div class="bg-white  h-130 border-orange-100 text-amber-950 rounded-xl border-2 p-6 space-y-3 hover:border-amber-900 hover:shadow-2xl hover:shadow-amber-950/80 hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center  lg:h-150">
-                <img src="images/متلازمة فريجولى.jpg" alt="book image" class="w-full max-w-60 aspect-[2/3] object-cover rounded-lg shadow-lg shadow-amber-950 mt-1">
-                        <h3 lang="ar" class="text-2xl font-bold">متلازمة فريجولى</h3>
-                        <p class="stars text-yellow-400" aria-label="Rated 5 out of 5"><i class="fa-solid fa-star "></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <p class="sec2price font-serif">240 EGP <del>260 EGP</del></p>
-                        <button class="bg-amber-950 text-white py-2 px-4 rounded-lg hover:bg-amber-900 transition-colors duration-300">Add to cart <i class="fa-solid fa-cart-shopping"></i></button>        
-            </div>
-            <div class="bg-white  h-130 border-orange-100 text-amber-950 rounded-xl border-2 p-6 space-y-3 hover:border-amber-900 hover:shadow-2xl hover:shadow-amber-950/80 hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center  lg:h-150">
-                <img src="images/قنبلة للاستخدام الشخصى.jpg" alt="book image" class="w-full max-w-60 aspect-[2/3] object-cover rounded-lg shadow-lg shadow-amber-950 mt-1">
-                        <h3 lang="ar" class="text-2xl font-bold">قنبلة للاستخدام الشخصى</h3>
-                        <p class="stars text-yellow-400" aria-label="Rated 5 out of 5"><i class="fa-solid fa-star "></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <p class="sec2price font-serif">300 EGP <del>360 EGP</del></p>
-                        <button class="bg-amber-950 text-white py-2 px-4 rounded-lg hover:bg-amber-900 transition-colors duration-300">Add to cart <i class="fa-solid fa-cart-shopping"></i></button>        
-            </div>
-            <div class="bg-white  h-130 border-orange-100 text-amber-950 rounded-xl border-2 p-6 space-y-3 hover:border-amber-900 hover:shadow-2xl hover:shadow-amber-950/80 hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center lg:h-150">
-                <img src="images/ازر.jpg" alt="book image" class="w-full max-w-60 aspect-[2/3] object-cover rounded-lg shadow-lg shadow-amber-950 mt-1">
-                        <h3 lang="ar" class="text-2xl font-bold">ازر</h3>
-                        <p class="stars text-yellow-400" aria-label="Rated 5 out of 5"><i class="fa-solid fa-star "></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-                        <p class="sec2price font-serif">430 EGP <del>460 EGP</del></p>
-                        <button class="bg-amber-950 text-white py-2 px-4 rounded-lg hover:bg-amber-900 transition-colors duration-300">Add to cart <i class="fa-solid fa-cart-shopping"></i></button>        
-            </div>
+<div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10 px-5 md:px-10 lg:px-20">
 
-        </div>
+    <!-- Book 1 -->
+    <article class="flex flex-col items-center gap-3 p-6 text-center bg-white text-amber-950 rounded-xl border-2 border-orange-100 hover:border-amber-900 hover:shadow-2xl hover:shadow-amber-950/40 hover:-translate-y-2 transition-all duration-300 motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+        <img src="images/الجزار.jpg" alt="غلاف كتاب الجزار" loading="lazy" class="w-full max-w-60 aspect-[2/3] object-cover rounded-lg shadow-lg shadow-amber-950/50">
+        <h3 lang="ar" dir="rtl" class="text-2xl font-bold">الجزار</h3>
+        <p class="flex gap-1 text-amber-400" role="img" aria-label="Rated 5 out of 5">
+            <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+        </p>
+        <p class="font-serif text-lg"><span class="font-bold">150 EGP</span> <del class="ml-1 text-base text-stone-500">200 EGP</del></p>
+        <button type="button" class="mt-auto bg-amber-950 text-white py-2 px-4 rounded-lg hover:bg-amber-900 transition-colors duration-300">Add to cart <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></button>
+    </article>
 
-        <button class="mt-8 bg-gradient-to-r from-amber-950 to-amber-800 text-white py-3 px-6 rounded-lg hover:bg-amber-900 transition-colors duration-300 absolute lg:top-9/10 lg:py-2 lg:px-5 bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:from-amber-800 hover:to-amber-950  ">Browse the Shelf</button>
+    <!-- Book 2 -->
+    <article class="flex flex-col items-center gap-3 p-6 text-center bg-white text-amber-950 rounded-xl border-2 border-orange-100 hover:border-amber-900 hover:shadow-2xl hover:shadow-amber-950/40 hover:-translate-y-2 transition-all duration-300 motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+        <img src="images/متلازمة فريجولى.jpg" alt="غلاف كتاب متلازمة فريجولى" loading="lazy" class="w-full max-w-60 aspect-[2/3] object-cover rounded-lg shadow-lg shadow-amber-950/50">
+        <h3 lang="ar" dir="rtl" class="text-2xl font-bold">متلازمة فريجولى</h3>
+        <p class="flex gap-1 text-amber-400" role="img" aria-label="Rated 5 out of 5">
+            <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+        </p>
+        <p class="font-serif text-lg"><span class="font-bold">240 EGP</span> <del class="ml-1 text-base text-stone-500">260 EGP</del></p>
+        <button type="button" class="mt-auto bg-amber-950 text-white py-2 px-4 rounded-lg hover:bg-amber-900 transition-colors duration-300">Add to cart <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></button>
+    </article>
+
+    <!-- Book 3 -->
+    <article class="flex flex-col items-center gap-3 p-6 text-center bg-white text-amber-950 rounded-xl border-2 border-orange-100 hover:border-amber-900 hover:shadow-2xl hover:shadow-amber-950/40 hover:-translate-y-2 transition-all duration-300 motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+        <img src="images/قنبلة للاستخدام الشخصى.jpg" alt="غلاف كتاب قنبلة للاستخدام الشخصى" loading="lazy" class="w-full max-w-60 aspect-[2/3] object-cover rounded-lg shadow-lg shadow-amber-950/50">
+        <h3 lang="ar" dir="rtl" class="text-2xl font-bold">قنبلة للاستخدام الشخصى</h3>
+        <p class="flex gap-1 text-amber-400" role="img" aria-label="Rated 5 out of 5">
+            <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+        </p>
+        <p class="font-serif text-lg"><span class="font-bold">300 EGP</span> <del class="ml-1 text-base text-stone-500">360 EGP</del></p>
+        <button type="button" class="mt-auto bg-amber-950 text-white py-2 px-4 rounded-lg hover:bg-amber-900 transition-colors duration-300">Add to cart <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></button>
+    </article>
+
+    <!-- Book 4 -->
+    <article class="flex flex-col items-center gap-3 p-6 text-center bg-white text-amber-950 rounded-xl border-2 border-orange-100 hover:border-amber-900 hover:shadow-2xl hover:shadow-amber-950/40 hover:-translate-y-2 transition-all duration-300 motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+        <img src="images/ازر.jpg" alt="غلاف كتاب ازر" loading="lazy" class="w-full max-w-60 aspect-[2/3] object-cover rounded-lg shadow-lg shadow-amber-950/50">
+        <h3 lang="ar" dir="rtl" class="text-2xl font-bold">ازر</h3>
+        <p class="flex gap-1 text-amber-400" role="img" aria-label="Rated 5 out of 5">
+            <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+        </p>
+        <p class="font-serif text-lg"><span class="font-bold">430 EGP</span> <del class="ml-1 text-base text-stone-500">460 EGP</del></p>
+        <button type="button" class="mt-auto bg-amber-950 text-white py-2 px-4 rounded-lg hover:bg-amber-900 transition-colors duration-300">Add to cart <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></button>
+    </article>
+
+</div>
+
+        <button class="mt-15 bg-gradient-to-r from-amber-950 to-amber-800 text-white py-3 px-6 rounded-lg hover:bg-amber-900 duration-300 absolute lg:top-9/10 lg:py-2 lg:px-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:from-amber-800 hover:to-amber-950  ">Browse the Shelf</button>
 
     </section>
  <section id="our-team" class="w-full px-4 md:px-10 py-16 md:py-24 scroll-mt-20">
