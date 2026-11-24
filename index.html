@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-orange-50 font-serif">
+    <header class="fixed top-0 inset-x-0 z-50 flex justify-between items-center px-4 md:px-10 h-20 shadow-lg bg-white">
+        <img src="images/logo.jpg" alt="Diwan Logo" class="h-15 w-auto">
+        <nav class="hidden md:block">
+            <ul class="flex gap-6 lg:gap-8 text-lg font-semibold text-yellow-700">
+                <li><a href="#home" class="hover:text-amber-950">Home</a></li>
+                <li><a href="#services" class="hover:text-amber-950">Services</a></li>
+                <li><a href="#our-shelf" class="hover:text-amber-950">Our Shelf</a></li>
+                <li><a href="#our-team" class="hover:text-amber-950">Our Team</a></li>
+                <li><a href="#contact-us" class="hover:text-amber-950">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="flex items-center gap-4">
+            <button  class="h-12 w-30 bg-gradient-to-r from-amber-950 to-amber-700 text-amber-50 px-4 text-lg rounded-lg font-semibold hover:bg-gradient-to-r hover:from-amber-700 hover:to-amber-950 hover:shadow-lg">Login</button>
+
+            <details class="md:hidden relative">
+                <summary class="list-none cursor-pointer text-3xl text-amber-950">☰</summary>
+                <ul class="absolute right-0 mt-5 w-52 bg-white shadow-lg rounded-lg p-4 flex flex-col gap-3 text-lg font-semibold text-yellow-700">
+                    <li><a href="#home" class="hover:text-amber-950">Home</a></li>
+                    <li><a href="#services" class="hover:text-amber-950">Services</a></li>
+                    <li><a href="#our-shelf" class="hover:text-amber-950">Our Shelf</a></li>
+                    <li><a href="#our-team" class="hover:text-amber-950">Our Team</a></li>
+                    <li><a href="#contact-us" class="hover:text-amber-950">Contact Us</a></li>
+                </ul>
+            </details>
+        </div>
+    </header>
+    <main id="home" class="flex flex-col md:flex-row items-center gap-12 md:gap-6 min-h-screen px-4 md:px-10 pt-32 md:pt-20 pb-12">
+
+        <div class="w-full md:w-1/2 text-center">
+            <h2 class="text-4xl lg:text-6xl font-bold text-amber-950">Books for every mind &amp; moment</h2>
+            <p class="text-lg md:text-2xl text-amber-800 mt-4">Your next favorite story is just a page away</p>
+
+            <ul class="flex flex-wrap justify-center gap-3 mt-6 text-base md:text-lg text-amber-950 font-semibold">
+                <li class="bg-white py-2 px-4 rounded-full border border-amber-800">10+ Years Open</li>
+                <li class="bg-white py-2 px-4 rounded-full border border-amber-800">+20,000 Titles</li>
+                <li class="bg-white py-2 px-4 rounded-full border border-amber-800">Friendly Staff</li>
+            </ul>
+
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <button class="text-lg bg-gradient-to-r from-amber-950 to-amber-900 text-white py-3 px-6 rounded-lg hover:bg-amber-900 transition-colors duration-300 hover:from-amber-800 hover:to-amber-950 hover:shadow-lg hover:shadow-amber-950/50">Browse the Shelf</button>
+                <button class="text-lg text-amber-950 px-6 py-3 border-2 border-amber-950 rounded-lg font-semibold hover:bg-amber-950 hover:text-white">Watch the Tour</button>
+            </div>
+        </div>
+
+        <div class="relative w-full md:w-1/2 flex justify-center gap-2 pb-14">
+            <img src="images/فتى الاندلس.jpeg" alt="hero image" class="w-1/3 max-w-60 aspect-[2/3] object-cover rounded-lg shadow-lg shadow-amber-950">
+            <img src="images/قنبلة للاستخدام الشخصى.jpg" alt="hero image" class="w-1/3 max-w-60 aspect-[2/3] object-cover rounded-lg shadow-lg shadow-amber-950 mt-6">
+            <img src="images/قضية السنوات السبع.jpg" alt="hero image" class="w-1/3 max-w-60 aspect-[2/3] object-cover rounded-lg shadow-lg shadow-amber-950">
+
+            <div class="absolute z-10 bottom-0 left-1/2 -translate-x-1/2 md:left-4 md:translate-x-0 text-lg text-amber-950 bg-white py-3 px-5 border border-amber-800 rounded-lg shadow-2xl shadow-amber-950">
+                <p class="text-2xl font-bold font-serif">+500</p>
+                <p>Happy Readers</p>
+            </div>
+        </div>
+    </main>
+    <section id="services" class="w-full  px-4 md:px-10 py-16 md:py-30">
+        <div class="flex flex-col items-center text-center gap-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-950"> Everything a reader needs</h2>
+            <p class="text-lg md:text-xl text-amber-800 max-w-2xl">From the first page to the last, we help you find, enjoy and share great books</p>
+            <div class="w-30 h-1 bg-amber-950 rounded-full"></div>
+        </div>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-10">
+            <div class="bg-white w-full h-70 border-orange-100  rounded-xl border-2 p-6 space-y-3 hover:border-amber-900 hover:shadow-2xl hover:shadow-amber-950/80 hover:-translate-y-2 transition-all duration-300">
+                <h2 class="text-2xl font-bold text-amber-950 md:text-3xl"><i class="fa-solid fa-book-open"></i> New Releases</h2>
+                <p class="text-amber-800">Fresh titles on the shelf the week they are published.</p>
+                <ul>
+                    <li class="flex items-center"><i class="fa-solid fa-check pr-2 text-lime-800"></i>Weekly arrivals</li>
+                    <li class="flex items-center"><i class="fa-solid fa-check pr-2 text-lime-800"></i>Pre-order service</li>
+                    <li class="flex items-center"><i class="fa-solid fa-check pr-2 text-lime-800"></i>Signed copies</li>
+                </ul>
+            </div>
+            <div class="bg-white w-full h-70 border-orange-100  rounded-xl border-2 p-6 space-y-3 hover:border-amber-900 hover:shadow-2xl hover:shadow-amber-950/80 hover:-translate-y-2 transition-all duration-300">
+                <h2 class="text-2xl font-bold text-amber-950 md:text-3xl"> <i class="fa-solid fa-gem"></i> Used & Rare Books</h2>
+                <p class="text-amber-800">Discover unique and hard-to-find titles at special prices.Carefully checked second-hand books at fair prices.</p>
+                <ul>
+                    <li class="flex items-center"><i class="fa-solid fa-check pr-2 text-lime-800"></i>Condition grading</li>
+                    <li class="flex items-center"><i class="fa-solid fa-check pr-2 text-lime-800"></i>Trade-in credit</li>
+                    <li class="flex items-center"><i class="fa-solid fa-check pr-2 text-lime-800"></i>Rare edition search</li>
+                </ul>
+            </div>
+            <div class="bg-white w-full h-70 border-orange-100  rounded-xl border-2 p-6 space-y-3 hover:border-amber-900 hover:shadow-2xl hover:shadow-amber-950/80 hover:-translate-y-2 transition-all duration-300">
+                <h2 class="text-2xl font-bold text-amber-950 md:text-3xl"><i class="fa-solid fa-cart-shopping"></i> Online Ordering</h2>
+                <p class="text-amber-800">Order your favorite books from the comfort of your home and have them delivered to your doorstep.Order from home and get your books delivered fast</p>
+                <ul>
+                    <li class="flex items-center"><i class="fa-solid fa-check pr-2 text-lime-800"></i>Same-day in Cairo</li>
+                    <li class="flex items-center"><i class="fa-solid fa-check pr-2 text-lime-800"></i>Secure payment</li>
+                    <li class="flex items-center"><i class="fa-solid fa-check pr-2 text-lime-800"></i>Easy returns</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <section class="w-full  bg-gradient-to-r from-amber-950 via-amber-900 to-amber-600 text-white ">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center px-4 py-12">
+            <div>
+                <p class="text-4xl font-bold bg-linear-to-b from-amber-200 to-amber-500 bg-clip-text text-transparent font-serif ">+500</p>
+                <p class="mt-1 text-amber-100">Readers in Our Club</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold bg-linear-to-b from-amber-200 to-amber-500 bg-clip-text text-transparent font-serif">+1000</p>
+                <p class="mt-1 text-amber-100">Orders Delivered</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold bg-linear-to-b from-amber-200 to-amber-500 bg-clip-text text-transparent font-serif">+50</p>
+                <p class="mt-1 text-amber-100">Author Events</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold bg-linear-to-b from-amber-200 to-amber-500 bg-clip-text text-transparent font-serif">+10</p>
+                <p class="mt-1 text-amber-100">Years of Reading</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="w-full h-350 md:h-250 relative px-4 md:px-10 py-16 md:py-30" id="our-shelf">
+        <div class="flex flex-col items-center text-center gap-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-950">Our Shelf This Month</h2>
+            <p class="text-lg md:text-xl text-amber-800 max-w-2xl">Staff favourites and bestsellers, picked by people who read them.</p>
+            <div class="w-30 h-1 bg-amber-950 rounded-full"></div>
+        </div>
+        <div class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-5 md:px-10 lg:gap-10 lg:px-20">
+            <div class="bg-white  h-130 border-orange-100 text-amber-950 rounded-xl border-2 p-6 space-y-3 hover:border-amber-900 hover:shadow-2xl hover:shadow-amber-950/80 hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center  lg:h-150">
+                <img src="images/الجزار.jpg" alt="book image" class="w-full max-w-60 aspect-[2/3] object-cover rounded-lg shadow-lg shadow-amber-950 mt-1">
+                        <h3 lang="ar" class="text-2xl font-bold">الجزار</h3>
+                        <p class="stars text-yellow-400" aria-label="Rated 5 out of 5"><i class="fa-solid fa-star "></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="sec2price font-serif">150 EGP <del>200 EGP</del></p>
+                        <button class="bg-amber-950 text-white py-2 px-4 rounded-lg hover:bg-amber-900 transition-colors duration-300">Add to cart <i class="fa-solid fa-cart-shopping"></i></button>        
+            </div>
+            <div class="bg-white  h-130 border-orange-100 text-amber-950 rounded-xl border-2 p-6 space-y-3 hover:border-amber-900 hover:shadow-2xl hover:shadow-amber-950/80 hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center  lg:h-150">
+                <img src="images/متلازمة فريجولى.jpg" alt="book image" class="w-full max-w-60 aspect-[2/3] object-cover rounded-lg shadow-lg shadow-amber-950 mt-1">
+                        <h3 lang="ar" class="text-2xl font-bold">متلازمة فريجولى</h3>
+                        <p class="stars text-yellow-400" aria-label="Rated 5 out of 5"><i class="fa-solid fa-star "></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="sec2price font-serif">240 EGP <del>260 EGP</del></p>
+                        <button class="bg-amber-950 text-white py-2 px-4 rounded-lg hover:bg-amber-900 transition-colors duration-300">Add to cart <i class="fa-solid fa-cart-shopping"></i></button>        
+            </div>
+            <div class="bg-white  h-130 border-orange-100 text-amber-950 rounded-xl border-2 p-6 space-y-3 hover:border-amber-900 hover:shadow-2xl hover:shadow-amber-950/80 hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center  lg:h-150">
+                <img src="images/قنبلة للاستخدام الشخصى.jpg" alt="book image" class="w-full max-w-60 aspect-[2/3] object-cover rounded-lg shadow-lg shadow-amber-950 mt-1">
+                        <h3 lang="ar" class="text-2xl font-bold">قنبلة للاستخدام الشخصى</h3>
+                        <p class="stars text-yellow-400" aria-label="Rated 5 out of 5"><i class="fa-solid fa-star "></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="sec2price font-serif">300 EGP <del>360 EGP</del></p>
+                        <button class="bg-amber-950 text-white py-2 px-4 rounded-lg hover:bg-amber-900 transition-colors duration-300">Add to cart <i class="fa-solid fa-cart-shopping"></i></button>        
+            </div>
+            <div class="bg-white  h-130 border-orange-100 text-amber-950 rounded-xl border-2 p-6 space-y-3 hover:border-amber-900 hover:shadow-2xl hover:shadow-amber-950/80 hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center lg:h-150">
+                <img src="images/ازر.jpg" alt="book image" class="w-full max-w-60 aspect-[2/3] object-cover rounded-lg shadow-lg shadow-amber-950 mt-1">
+                        <h3 lang="ar" class="text-2xl font-bold">ازر</h3>
+                        <p class="stars text-yellow-400" aria-label="Rated 5 out of 5"><i class="fa-solid fa-star "></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                        <p class="sec2price font-serif">430 EGP <del>460 EGP</del></p>
+                        <button class="bg-amber-950 text-white py-2 px-4 rounded-lg hover:bg-amber-900 transition-colors duration-300">Add to cart <i class="fa-solid fa-cart-shopping"></i></button>        
+            </div>
+
+        </div>
+
+        <button class="mt-8 bg-gradient-to-r from-amber-950 to-amber-800 text-white py-3 px-6 rounded-lg hover:bg-amber-900 transition-colors duration-300 absolute lg:top-9/10 lg:py-2 lg:px-5 bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:from-amber-800 hover:to-amber-950  ">Browse the Shelf</button>
+
+    </section>
+ <section id="our-team" class="w-full px-4 md:px-10 py-16 md:py-24 scroll-mt-20">
+        <div class="flex flex-col items-center text-center gap-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-950">Our Creative Team</h2>
+            <p class="text-lg md:text-xl text-amber-800 max-w-2xl">A small team that reads almost as much as it sells</p>
+            <div class="w-30 h-1 bg-amber-950 rounded-full"></div>
+        </div>
+        <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+            <article class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden">
+                <div class="relative h-64 bg-linear-to-br from-amber-900 to-amber-700 flex flex-col items-center justify-center gap-4">
+                    <div class="w-28 h-28 rounded-full bg-white flex items-center justify-center md:group-hover:opacity-30 transition">
+                        <svg viewBox="0 0 24 24" class="w-14 h-14 text-amber-800" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-6 8-6s8 2 8 6z"/></svg>
+                    </div>
+                    <div class="flex gap-3 md:absolute md:inset-0 md:items-center md:justify-center md:opacity-0 md:group-hover:opacity-100 transition">
+                        <a href="#" aria-label="Facebook" class="w-11 h-11 rounded-full bg-white text-amber-800 flex items-center justify-center hover:bg-amber-100"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" class="w-11 h-11 rounded-full bg-white text-amber-800 flex items-center justify-center hover:bg-amber-100"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="w-11 h-11 rounded-full bg-white text-amber-800 flex items-center justify-center hover:bg-amber-100"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-amber-950">Ahmed Mohamed</h3>
+                    <p class="text-amber-800">Store Manager</p>
+                    <p class="mt-3 text-sm text-stone-600">10 years of selecting and curating books</p>
+                </div>
+            </article>
+            <article class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden">
+                <div class="relative h-64 bg-linear-to-br from-red-900 to-orange-700 flex flex-col items-center justify-center gap-4">
+                    <div class="w-28 h-28 rounded-full bg-white flex items-center justify-center md:group-hover:opacity-30 transition">
+                        <svg viewBox="0 0 24 24" class="w-14 h-14 text-red-800" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-6 8-6s8 2 8 6z"/></svg>
+                    </div>
+                    <div class="flex gap-3 md:absolute md:inset-0 md:items-center md:justify-center md:opacity-0 md:group-hover:opacity-100 transition">
+                        <a href="#" aria-label="Facebook" class="w-11 h-11 rounded-full bg-white text-red-800 flex items-center justify-center hover:bg-red-100"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" class="w-11 h-11 rounded-full bg-white text-red-800 flex items-center justify-center hover:bg-red-100"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="w-11 h-11 rounded-full bg-white text-red-800 flex items-center justify-center hover:bg-red-100"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-amber-950">Sara Ahmed</h3>
+                    <p class="text-red-800">Fiction Specialist</p>
+                    <p class="mt-3 text-sm text-stone-600">Knows the right novel for every mood</p>
+                </div>
+            </article>
+            <article class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden">
+                <div class="relative h-64 bg-linear-to-br from-lime-800 to-lime-600 flex flex-col items-center justify-center gap-4">
+                    <div class="w-28 h-28 rounded-full bg-white flex items-center justify-center md:group-hover:opacity-30 transition">
+                        <svg viewBox="0 0 24 24" class="w-14 h-14 text-lime-700" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-6 8-6s8 2 8 6z"/></svg>
+                    </div>
+                    <div class="flex gap-3 md:absolute md:inset-0 md:items-center md:justify-center md:opacity-0 md:group-hover:opacity-100 transition">
+                        <a href="#" aria-label="Facebook" class="w-11 h-11 rounded-full bg-white text-lime-800 flex items-center justify-center hover:bg-lime-100"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" class="w-11 h-11 rounded-full bg-white text-lime-800 flex items-center justify-center hover:bg-lime-100"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="w-11 h-11 rounded-full bg-white text-lime-800 flex items-center justify-center hover:bg-lime-100"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-amber-950">Mohamed Ali</h3>
+                    <p class="text-lime-700">Online Orders Lead</p>
+                    <p class="mt-3 text-sm text-stone-600">Makes sure every parcel arrives safely</p>
+                </div>
+            </article>
+            <article class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition overflow-hidden">
+                <div class="relative h-64 bg-linear-to-br from-amber-500 to-orange-500 flex flex-col items-center justify-center gap-4">
+                    <div class="w-28 h-28 rounded-full bg-white flex items-center justify-center md:group-hover:opacity-30 transition">
+                        <svg viewBox="0 0 24 24" class="w-14 h-14 text-amber-600" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.5-6 8-6s8 2 8 6z"/></svg>
+                    </div>
+                    <div class="flex gap-3 md:absolute md:inset-0 md:items-center md:justify-center md:opacity-0 md:group-hover:opacity-100 transition">
+                        <a href="#" aria-label="Facebook" class="w-11 h-11 rounded-full bg-white text-amber-700 flex items-center justify-center hover:bg-amber-100"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" class="w-11 h-11 rounded-full bg-white text-amber-700 flex items-center justify-center hover:bg-amber-100"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="w-11 h-11 rounded-full bg-white text-amber-700 flex items-center justify-center hover:bg-amber-100"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="p-6 text-center">
+                    <h3 class="text-xl font-bold text-amber-950">Noura Khaled</h3>
+                    <p class="text-amber-600">Events &amp; Kids' Corner</p>
+                    <p class="mt-3 text-sm text-stone-600">Runs story hours and author evenings</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="faq" class="w-full max-w-3xl mx-auto px-4 pb-16 scroll-mt-20">
+        <h2 class="text-3xl md:text-4xl font-bold text-amber-950 text-center">Common Questions</h2>
+        <div class="mt-8 space-y-3">
+            <details class="bg-white rounded-xl border border-orange-100 p-4">
+                <summary class="cursor-pointer font-bold text-amber-950">How fast is delivery?</summary>
+                <p class="mt-3 text-stone-600">Same day inside Cairo for orders before 2 pm, and 2–3 days elsewhere in Egypt.</p>
+            </details>
+            <details class="bg-white rounded-xl border border-orange-100 p-4">
+                <summary class="cursor-pointer font-bold text-amber-950">Can I return a book?</summary>
+                <p class="mt-3 text-stone-600">Yes, within 7 days if the book is unread and in its original condition.</p>
+            </details>
+            <details class="bg-white rounded-xl border border-orange-100 p-4">
+                <summary class="cursor-pointer font-bold text-amber-950">Do you buy used books?</summary>
+                <p class="mt-3 text-stone-600">We do. Bring them in and get store credit after a quick check.</p>
+            </details>
+        </div>
+    </section>
+    <footer id="contact-us" class="bg-amber-950 text-white">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 px-5 md:px-10 py-16">
+        <div class="bg-amber-900/50 rounded-3xl p-6 md:p-8 shadow-xl shadow-black/20">
+            <h2 class="text-3xl font-bold text-orange-50 mb-6">
+                Contact Us
+            </h2>
+            <form class="flex flex-col gap-5">
+                <input type="text" placeholder="Full Name"
+                class="bg-orange-50 text-amber-950 placeholder-amber-950 rounded-lg w-full px-4 py-4 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                <input type="email" placeholder="Email Address"
+                class="bg-orange-50 text-amber-950 placeholder-amber-950 rounded-lg w-full px-4 py-4 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                <textarea placeholder="Your message..."
+                class="bg-orange-50 text-amber-950 placeholder-amber-950 rounded-lg w-full h-40 px-4 py-4 focus:outline-none focus:ring-2 focus:ring-yellow-500 resize-none"></textarea>
+                <button type="submit"
+                class="bg-gradient-to-r from-amber-950 to-amber-800 text-amber-250 font-bold py-4 rounded-lg hover:bg-yellow-500 transition-all duration-300">
+                    Send Message
+                    <i class="fa-solid fa-paper-plane ml-2"></i>
+                </button>
+            </form>
+        </div>
+        <div class="flex flex-col gap-8">
+            <h2 class="text-3xl font-bold text-orange-50">
+                Contact Information
+            </h2>
+            <div class="flex items-center gap-4">
+                <div class="size-12 bg-amber-900 rounded-xl flex items-center justify-center">
+                    <i class="fa-solid fa-location-dot text-yellow-500 text-xl"></i>
+                </div>
+                <div>
+                    <p class="text-orange-200 text-sm">Address</p>
+                    <p class="font-semibold">Cairo, Egypt</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="size-12 bg-amber-900 rounded-xl flex items-center justify-center">
+                    <i class="fa-solid fa-phone text-yellow-500 text-xl"></i>
+                </div>
+                <div>
+                    <p class="text-orange-200 text-sm">Phone</p>
+                    <p class="font-semibold">+20 123 456 789</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="size-12 bg-amber-900 rounded-xl flex items-center justify-center">
+                    <i class="fa-solid fa-envelope text-yellow-500 text-xl"></i>
+                </div>
+                <div>
+                    <p class="text-orange-200 text-sm">Email</p>
+                    <p class="font-semibold">info@diwan.com</p>
+                </div>
+            </div>
+            <div class="bg-gradient-to-r from-amber-900 via-amber-700 to-amber-600 rounded-2xl flex items-center justify-center p-8 mt-2 text-center  h-[150px] ">
+                <div class=" text-orange-100 font-semibold">
+                    <i class="fa-solid fa-map px-2"></i> Site Map
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="border-t border-orange-100/20 px-5 md:px-10 py-6 flex flex-col md:flex-row justify-between items-center gap-5">
+        <p class="text-orange-200 text-sm">
+            © 2026 Diwan Bookstore. All rights reserved.
+        </p>
+        <div class="flex items-center gap-6 text-xl text-yellow-500">
+            <a href="#" class="hover:text-white transition-colors">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="hover:text-white transition-colors">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="hover:text-white transition-colors">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
